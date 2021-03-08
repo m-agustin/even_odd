@@ -1,11 +1,13 @@
+#Implements conditional statement to determine if the user's input is even, odd, or not valid
+
 while True:
     try:
         number = int(input("Give me a number: "))
     except ValueError:
         print("Not a valid input, try again")
-        continue
+        continue			#if not valid, program will again ask the user to provide an input until valid
     else:
-        break
+        break				#program stops once user provides valid input, and prints one of the two statements
 if int(number)%2 == 0:
     print("Your number " + str(number) + " is EVEN")
 else:
