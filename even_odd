@@ -1,0 +1,13 @@
+while True:
+    try:
+        number = int(input("Give me a number: "))
+    except ValueError:
+        print("Not a valid input, try again")
+        continue
+    else:
+        break
+if int(number)%2 == 0:
+    print("Your number " + str(number) + " is EVEN")
+else:
+    print("Your number " + str(number) + " is ODD")
+    
